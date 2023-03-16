@@ -628,6 +628,7 @@ button {
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
+	margin-bottom: 16px;
 }
 .modal-form {
 	display: flex;
@@ -635,7 +636,6 @@ button {
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    
     width: 360px;
     height: 336px;
     left: 540px;
@@ -651,13 +651,30 @@ button {
     border: 1px solid #2E2F42;
     border-radius: 4px;
 }
+
+.form-input-comment {
+	width: 360px;
+    height: 120px;
+    left: 0px;
+    top: 216px;
+    opacity: 0.2;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+}
+.form-input-comment::placeholder {
+	width: 57px;
+    height: 14px;
+    left: 16px;
+    top: 8px;
+	font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+} 
 .form-btn {
-	display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+	align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
-    position: absolute;
     width: 169px;
     height: 56px;
     left: 635px;
@@ -665,4 +682,25 @@ button {
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+	font-family: inherit;
+	cursor: pointer;
+	font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+	transition: color 250ms linear, background-color 250ms linear;
+	animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-btn:is(:hover, :focus) {
+	background-color: #404bbf;
+	color: #ffffff;
+}
+.form-label span {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
 }
