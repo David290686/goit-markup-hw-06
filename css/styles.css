@@ -486,7 +486,17 @@ button {
 .footer-icon-social-icon {
 	fill: currentColor;
 }
-.footer-form-group {
+
+.footer-modal-form {
+	display: flex;
+    align-items: end;
+	gap: 24px;
+    padding: 0px;
+    width: 453px;
+    height: 80px;
+    left: 828px;
+    top: 100px;
+    border-radius: 4px;
 }
 .footer-form-label {
 	display: flex;
@@ -516,7 +526,9 @@ button {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 	padding: 8px 16px;
-	background-color: #2E2F42;;
+	color: #ffffff;
+	background-color: #2E2F42;
+	outline: transparent;
 }
 .footer-form-input:focus {
 	border-color: #4D5AE5;
@@ -529,7 +541,7 @@ button {
     letter-spacing: 0.04em;
     color: #FFFFFF;
 } 
-.footer-form-btn {
+.footer-subscribe-btn {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -552,7 +564,14 @@ button {
    order: 0;
    flex-grow: 0;
 }
+.footer-form-btn {
+	position: relative;
+}
 .footer-btn-icon {
+	position: absolute;
+	left: 117px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .portfolio {
@@ -721,6 +740,7 @@ button {
     border: 1px solid #2E2F42;
     border-radius: 4px;
 	padding-left: 38px;
+	color: rgba(46, 47, 66, 1);
 	outline: transparent;
 }
 .form-input:focus {
@@ -755,8 +775,7 @@ button {
 	padding: 16px 32px;
     width: 169px;
     height: 56px;
-    left: 635px;
-    top: 584px;
+	margin: auto;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
