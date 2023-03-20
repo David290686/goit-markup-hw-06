@@ -842,12 +842,45 @@ button {
 	transition: fill 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-custom-checkbox {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+    height: 16px;
+    left: 20px;
+    top: 20px;
+    border: 1px solid #2E2F42;
+    border-radius: 2px;
+	fill: transparent;
+	transition: background-color 250ms, fill 250ms;
+	animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-checkbox-icon {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    top: 4px;
+    left: 3px;
+	fill: #F4F4FD;
+}
 .form-checkbox {
 	position: absolute;
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
+}
+.form-checkbox:checked + .form-custom-checkbox{
+	background-color: #404bbf;
+	border: 1px solid #404BBF;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.form-checkbox:checked + .form-custom-checkbox .form-checkbox-icon {
+	opacity: 1;
+	fill: #f4f4fd;
 }
 .form-label-checkbox {
 	margin-top: 16px;
@@ -856,29 +889,8 @@ button {
 	display: flex;
 	align-items: center;
 }
-.form-label-checkbox span {
-	content: "";
-	width: 16px;
-	height: 16px;
-	border: 1px solid #2e2f42;
-	border-radius: 2px;
-	margin-right: 8px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	fill: transparent;
-	transition: background-color 250ms, fill 250ms;
-	animation: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-checkbox:checked + .form-label-checkbox span {
-	fill: #f4f4fd;
-	background-color: #404bbf;
-	border-color: #404bbf;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 .checkbox-text {
-	display: flex;
+	margin-left: 8px;
 	font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
