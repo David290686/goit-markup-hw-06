@@ -853,11 +853,6 @@ button {
 	margin-top: 16px;
 	width: 360px;
 	height: 16px;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.04em;
-	color: #8e8f99;
 	display: flex;
 	align-items: center;
 }
@@ -881,4 +876,20 @@ button {
 	border-color: #404bbf;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.checkbox-text {
+	display: flex;
+	font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+.privacy-policy {
+	font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: #4D5AE5;
 }
