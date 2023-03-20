@@ -450,14 +450,16 @@
 					</div>
 				</form>
 				<div class="form-group">
-					<input type="checkbox" class="form-checkbox visually-hidden" id="policy" name="policy"/>
-					<label for="policy" class="form-label-checkbox">
-						<span class="checkbox-text">
+					<label class="form-label-checkbox">
+					<input type="checkbox" class="form-checkbox visually-hidden" name="policy" value="accept-policy"/>
+					    <span class="form-custom-checkbox">
 							<svg class="form-checkbox-icon" width="10px" height="8px">
 								<use href="./images/modal-icon.svg#icon-check"></use>
 							</svg>
+						</span> 
+						<span class="checkbox-text">
 							I accept the terms and conditions of the <a class="privacy-policy">Privacy Policy</a>
-					    </span> 
+					    </span>
 					</label>
 				</div>
 				<button type="submit" class="form-btn btn">Send</button>
